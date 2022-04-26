@@ -2,7 +2,7 @@
   "name": "my-website",
   "version": "0.0.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://JH-Anthony.github.io/PairingLearning",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
