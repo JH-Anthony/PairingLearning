@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://jh-anthony.github.io/PairingLearning/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -36,7 +36,7 @@ const config = {
         // path: "./blog",
         blog: {
           path: "./blog",
-          routeBasePath: "/PairingLearning/"
+          routeBasePath: "/"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
