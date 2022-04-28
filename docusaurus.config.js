@@ -36,7 +36,7 @@ const config = {
         // path: "./blog",
         blog: {
           path: "./blog",
-          routeBasePath: "/"
+          routeBasePath: "/PairingLearning/"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
