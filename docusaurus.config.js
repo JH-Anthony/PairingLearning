@@ -9,7 +9,7 @@ const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   url: "https://jh-anthony.github.io/PairingLearning/",
-  baseUrl: "/",
+  baseUrl: "/PairingLearning/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
