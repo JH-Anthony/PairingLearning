@@ -1,35 +1,27 @@
-
-name: GitHub Actions Build and Deploy Demo
+name: Publish to Github Pages
 
 on:
-
-  push:
-
-    branches:
-
-     - master
+  push:
+    branches:
+      - master
 
 jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
 
-  build-and-deploy:
+      # 安装依赖
+      - run: yarn install
 
-    runs-on: ubuntu-latest
+      # 打包
+      - run: yarn run build
 
-    steps:
-
-        uses: actions/checkout@master
-
-        run: yarn install
-
-        run: yarn build
-
-        uses: JamesIves/github-pages-deploy-action@v4.3.0
-
-        with:
-
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-
-          BRANCH: gh-pages
-
-          FOLDER: dist
-
+      # 部署
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          # 生成文件的目录
+          PUBLISH_DIR: ./build
