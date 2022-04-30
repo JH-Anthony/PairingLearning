@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[637],{2363:function(e){e.exports=JSON.parse('{"allTagsPath":"/PairingLearning/tags","name":"hello","count":2,"permalink":"/PairingLearning/tags/hello"}')}}]);
